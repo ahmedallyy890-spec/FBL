@@ -1,0 +1,79 @@
+@keyframes any {
+    from {
+        opacity: 0;
+    }
+    to {
+
+    }
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: any 3s;
+}
+footer {
+    border-radius: 20px;
+    box-shadow: 0px 40px 40px 10px rgba(43, 43, 43, 0.892);
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-color: white;
+}
+footer nav {
+    gap: 40px;
+    display: flex;
+}
+footer a {
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 10px;
+}
+footer #home-link {
+    font-size: 22px;
+    background-color: rgba(0, 0, 0, 0.804);
+    padding: 10px;
+    margin-top: 0;
+    border-radius: 50%;
+}
+.home {
+    justify-content: center;
+    margin-top: 300px;
+    width: 100%;
+}
+.home .cont {
+    display: flex;
+    gap: 30px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.home .cont .card {
+    background-color: rgb(24, 23, 24);
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.home .cont .card a {
+    text-decoration: none;
+    font-size: 19px;
+}
+.home .cont .card:hover {
+    background-color: rgb(42, 42, 42);
+    transform: translateY(-5px);
+}
+iframe {
+    border-radius: 15px;
+}
+p {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+}
