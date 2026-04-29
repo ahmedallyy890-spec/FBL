@@ -6,14 +6,24 @@
 
     }
 }
+@keyframes any2 {
+    from {
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    to {
+
+    }
+}
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     animation: any 3s;
+    background: linear-gradient(to right, rgb(244, 251, 253), rgb(255, 255, 255), rgb(222, 244, 252));
 }
 footer {
     border-radius: 20px;
-    box-shadow: 0px 40px 40px 10px rgba(43, 43, 43, 0.892);
+    box-shadow: 0px 40px 40px 10px rgba(146, 219, 247, 0.892);
     height: 70px;
     width: 100%;
     position: fixed;
@@ -33,6 +43,10 @@ footer a {
     display: inline-block;
     text-decoration: none;
     margin-top: 10px;
+    transition: 0.3s;
+}
+footer a:hover {
+    transform: scale(1.2);
 }
 footer #home-link {
     font-size: 22px;
@@ -40,11 +54,22 @@ footer #home-link {
     padding: 10px;
     margin-top: 0;
     border-radius: 50%;
+    transition: 0.3s;
+}
+footer #home-link:hover {
+    transform: scale(1.1);
 }
 .home {
     justify-content: center;
     margin-top: 300px;
     width: 100%;
+    animation: any2 3s;
+}
+.home2 {
+    animation: any2 3s;
+}
+.home h1 {
+    font-size: 40px;
 }
 .home .cont {
     display: flex;
